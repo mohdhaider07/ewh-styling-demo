@@ -16,7 +16,7 @@ export default function Home() {
     <main className="relative flex min-h-full flex-1 items-center justify-center overflow-hidden px-6 py-16">
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[70%] -translate-x-1/2 rounded-full bg-info/20 blur-3xl dark:bg-info/30"
+        className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[70%] -translate-x-1/2 rounded-full bg-info/20 blur-3xl"
       />
 
 

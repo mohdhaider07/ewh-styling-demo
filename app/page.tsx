@@ -21,6 +21,15 @@ export default function Home() {
 
 
       <section>
+        <Title level={1}>Theme Lab</Title>
+        <Text
+          className="text-5xl font-bold text-foreground"
+        >Hello world</Text>
+        <Paragraph>
+          Ant Design is the source of truth. Colors are mapped in{" "}
+          <code>@theme</code> and used as Tailwind classes.
+        </Paragraph>
+
         <Space wrap size="middle">
           <Button
             type={theme === "light" ? "primary" : "default"}
@@ -40,11 +49,7 @@ export default function Home() {
           >
             System
           </Button>
-          <Button
-            type={"default"}
-          >
-            Default Button
-          </Button>
+
         </Space>
 
         <div className="mt-8 flex gap-3">

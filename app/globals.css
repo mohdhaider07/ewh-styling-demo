@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-/* Ant Design cssVar tokens → Tailwind color utilities */
 :root {
   --color-golden: #FFD101;
 }

@@ -85,6 +85,13 @@ export default function Home() {
           <RegionBadge region="TW" />
           <RegionBadge region="US" />
         </div>
+
+
+        <div
+          className="mt-6 h-12 w-40 flex items-center justify-center bg-golden"
+        >
+          Golden color
+        </div>
       </section>
     </main>
   );

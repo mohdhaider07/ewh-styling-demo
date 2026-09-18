@@ -3,6 +3,10 @@
 @import "tailwindcss";
 
 /* Ant Design cssVar tokens → Tailwind color utilities */
+:root {
+  --color-golden: #FFD101;
+}
+
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -20,6 +24,8 @@
   --color-region-sz: var(--ant-color-region-sz);
   --color-region-tw: var(--ant-color-region-tw);
   --color-region-us: var(--ant-color-region-us);
+  /* Color which does not have any Ant Design cssVar tokens */
+  --color-golden: var(--color-golden);
 }
 
 body {
@@ -32,6 +38,7 @@ body {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

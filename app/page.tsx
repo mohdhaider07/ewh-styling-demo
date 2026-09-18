@@ -6,6 +6,24 @@ import { useEffect, useState } from "react";
 
 const { Title, Paragraph, Text } = Typography;
 
+const REGION_CLASS = {
+  HK: "bg-region-hk/20 text-region-hk",
+  SH: "bg-region-sh/20 text-region-sh",
+  SZ: "bg-region-sz/20 text-region-sz",
+  TW: "bg-region-tw/20 text-region-tw",
+  US: "bg-region-us/20 text-region-us",
+} as const;
+
+function RegionBadge({ region }: { region: keyof typeof REGION_CLASS }) {
+  return (
+    <div
+      className={`rounded-full px-3 py-1 text-sm font-medium ${REGION_CLASS[region]}`}
+    >
+      {region}
+    </div>
+  );
+}
+
 export default function Home() {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -59,6 +77,13 @@ export default function Home() {
             className="h-10 flex-1 rounded-lg bg-layout ring-1 ring-border"
             title="bg-layout"
           />
+        </div>
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <RegionBadge region="HK" />
+          <RegionBadge region="SH" />
+          <RegionBadge region="SZ" />
+          <RegionBadge region="TW" />
+          <RegionBadge region="US" />
         </div>
       </section>
     </main>

@@ -15,6 +15,11 @@
   --color-fill: var(--ant-color-fill-quaternary);
   --color-primary: var(--ant-color-primary);
   --color-info: var(--ant-color-info);
+  --color-region-hk: var(--ant-color-region-hk);
+  --color-region-sh: var(--ant-color-region-sh);
+  --color-region-sz: var(--ant-color-region-sz);
+  --color-region-tw: var(--ant-color-region-tw);
+  --color-region-us: var(--ant-color-region-us);
 }
 
 body {

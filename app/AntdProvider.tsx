@@ -23,6 +23,11 @@ export default function AntdProvider({
           token: {
             colorPrimary: "#1677ff",
             colorInfo: "#1AAB45",
+            colorRegionHk: isDark ? "#FFC53D" : "#FAAD14",
+            colorRegionSh: isDark ? "#73D13D" : "#52C41A",
+            colorRegionSz: isDark ? "#4096FF" : "#1677FF",
+            colorRegionTw: isDark ? "#9254DE" : "#722ED1",
+            colorRegionUs: isDark ? "#FF7A45" : "#FA541C",
           },
         }}
       >

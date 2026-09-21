@@ -68,6 +68,8 @@ export default function Home() {
             System
           </Button>
 
+
+
         </Space>
 
         <div className="mt-8 flex gap-3">
@@ -87,11 +89,14 @@ export default function Home() {
         </div>
 
 
-        <div
-          className="mt-6 h-12 w-40 flex items-center justify-center bg-golden"
+
+
+        <Button
+          type="primary"
+          className="bg-golden"
         >
           Golden color
-        </div>
+        </Button>
       </section>
     </main>
   );

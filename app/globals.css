@@ -3,7 +3,11 @@
 @import "tailwindcss";
 
 :root {
-  --color-golden: #FFD101;
+  --golden: #ffd101;
+}
+
+.dark {
+  --golden: #393429;
 }
 
 @theme inline {
@@ -23,8 +27,8 @@
   --color-region-sz: var(--ant-color-region-sz);
   --color-region-tw: var(--ant-color-region-tw);
   --color-region-us: var(--ant-color-region-us);
-  /* Color which does not have any Ant Design cssVar tokens */
-  --color-golden: var(--color-golden);
+  /* CSS-only color (not from Ant tokens) — toggled via .dark from next-themes */
+  --color-golden: var(--golden);
 }
 
 body {

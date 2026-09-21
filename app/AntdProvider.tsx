@@ -28,6 +28,7 @@ export default function AntdProvider({
             colorRegionSz: isDark ? "#4096FF" : "#1677FF",
             colorRegionTw: isDark ? "#9254DE" : "#722ED1",
             colorRegionUs: isDark ? "#FF7A45" : "#FA541C",
+            colorGolden: isDark ? "#393429" : "#FFD101",
           },
         }}
       >

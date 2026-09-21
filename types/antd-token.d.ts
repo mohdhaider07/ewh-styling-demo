@@ -7,5 +7,6 @@ declare module "antd/es/theme/interface/alias" {
     colorRegionSz: string;
     colorRegionTw: string;
     colorRegionUs: string;
+    colorGolden: string;
   }
 }

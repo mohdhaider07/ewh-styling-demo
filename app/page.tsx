@@ -3,6 +3,7 @@
 import { Button, Space, Typography } from "antd";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import GhButton from "./GhButton";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -91,12 +92,7 @@ export default function Home() {
 
 
 
-        <Button
-          type="primary"
-          className="bg-golden"
-        >
-          Golden color
-        </Button>
+        <GhButton className="mt-6">Golden color</GhButton>
       </section>
     </main>
   );
